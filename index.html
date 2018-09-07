@@ -30,22 +30,48 @@
                 </section>
 
                 <section>
+                    <h2>What would you,<br>a developer,<br> say that you do?</h2>
+                    <p class="fragment">Develop applications!</p>
+                </section>
+
+                <section>
+                    <h2>Let's develop an application</h2>
+                </section>
+
+                <section>
+                    <h2>What's a container image?</h2>
+                    <p class="fragment">A "container image" is an executable package of software that includes all of it's dependencies.</p>
+                </section>
+
+                <section>
+                    <h2>Let's create a Docker container image</h2>
+                    <ul>
+                    <li class="fragment">Write a <a href="https://docs.docker.com/engine/reference/builder/">Dockerfile</a></li>
+                    <li class="fragment"><pre><code>docker build -t fizzbuzz .</code></pre></li>
+                </section>
+
+                <section>
                     <h2>What are containers?</h2>
                     <ul>
                         <li class="fragment">"A standardized unit of software."</li>
-                        <li class="fragment">A "container image" is an executable package of software that includes all of it's dependencies.</li>
-                        <li class="fragment">When a "container image" is run it becomes a "container."</li>
+                        <li class="fragment">A running instance of a "container image."</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>How do you create a container image?</h2>
-                    <p class="fragment">With a <a href="https://containerd.io">container runtime</a>.</p>
+                    <h2>Let's run our container image</h2>
+                    <pre class="fragment"><code>docker run fizzbuzz</code>
                 </section>
 
                 <section>
-                    <h2>How do you run a container?</h2>
-                    <p class="fragment">With a <a href="https://containerd.io">container runtime</a>.</p>
+                    <h2>How can we share this container image?</h2>
+                    <p class="fragment">By pushing it to Docker Hub!</p>
+                </section>
+
+                <section>
+                    <h2>Let's share this image</h2>
+                    <pre class="fragment"><code>docker tag fizzbuzz j3rn/fizzbuzz:latest</code></pre>
+                    <pre class="fragment"><code>docker push j3rn/fizzbuzz:latest</code></pre>
                 </section>
 
                 <section>
@@ -55,44 +81,6 @@
                         <li class="fragment">Containers isolate software from the server environment.</li>
                         <li class="fragment">Containers are more lightweight than virtual machines.</li>
                     </ul>
-                </section>
-
-                <section>
-                    <h2>What is Docker?</h2>
-                    <ul>
-                        <li class="fragment">A container <em>platform</em></li>
-                        <li class="fragment"><a href="https://www.docker.com">A company composed of mindless yet pretentious corporate drones.</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Let's Give it a Try!</h2>
-                    <pre class="fragment"><code>docker run j3rn/geopattern</code></pre>
-                </section>
-
-                <section>
-                    <h2>Getting Started</h2>
-                    <a href="https://docs.docker.com/get-started">https://docs.docker.com/get-started</a>
-                </section>
-
-                <section>
-                    <h2>Install Docker</h2>
-                    <a href="https://docs.docker.com/install/">https://docs.docker.com/install</a>
-                </section>
-
-                <section>
-                    <h2>Write a Dockerfile</h2>
-                    <a href="https://docs.docker.com/engine/reference/builder/">https://docs.docker.com/engine/reference/builder</a>
-                </section>
-
-                <section>
-                    <h2>Build the Container Image</h2>
-                    <pre><code>docker build -t &lt;image name&gt; .</code></pre>
-                </section>
-
-                <section>
-                    <h2>Run the Container Image</h2>
-                    <pre><code>docker run &lt;image name&gt; .</code></pre>
                 </section>
             </div>
         </div>
